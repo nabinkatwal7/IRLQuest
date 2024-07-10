@@ -8,12 +8,14 @@
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "prepare": "husky"
   },
   "dependencies": {
     "@remix-run/node": "^2.10.2",
     "@remix-run/react": "^2.10.2",
     "@remix-run/serve": "^2.10.2",
+    "husky": "^9.0.11",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
