@@ -25,19 +25,21 @@ export default function Index() {
           className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center  font-medium tracking-tight text-transparent "
         >
           <div className="flex flex-col gap-4 items-center">
-            <p className="text-4xl md:text-7xl">IRL Quest</p>
-            <div className="flex flex-row items-center gap-2">
+            <p className="text-4xl md:text-7xl font-secondary font-bold">
+              IRL Quest
+            </p>
+            <div className="flex flex-col lg:flex-row items-center gap-2">
               <Link
-                to="/play"
-                className="text-2xl bg-[#0ca2bc] py-2 px-4 text-[#020617] rounded-xl hover:text-white hover:bg-[#03384c] transition-all duration-300 shadow-xl"
+                to="/signup"
+                className="lg:text-2xl text-xl bg-[#0ca2bc] py-2 px-4 text-[#020617] rounded-xl hover:text-white hover:bg-[#03384c] transition-all duration-300 shadow-xl"
               >
-                Create an account
+                Begin your journey
               </Link>
               <Link
-                to="/play"
-                className="text-2xl bg-[#0ca2bc] py-2 px-4 text-[#020617] rounded-xl hover:text-white hover:bg-[#03384c] transition-all duration-300 shadow-xl"
+                to="login"
+                className="lg:text-2xl text-xl bg-[#0ca2bc] py-2 px-4 text-[#020617] rounded-xl hover:text-white hover:bg-[#03384c] transition-all duration-300 shadow-xl"
               >
-                Hop back in
+                Continue your quest
               </Link>
             </div>
           </div>
