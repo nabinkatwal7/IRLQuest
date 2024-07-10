@@ -15,10 +15,13 @@
     "@remix-run/node": "^2.10.2",
     "@remix-run/react": "^2.10.2",
     "@remix-run/serve": "^2.10.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.14",
     "husky": "^9.0.11",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.10.2",
