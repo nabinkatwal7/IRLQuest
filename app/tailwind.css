@@ -4,10 +4,10 @@
 
 @font-face {
   font-family: "Quicksand";
-  src: url("./fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Urbanist";
-  src: url("./fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Urbanist-VariableFont_wght.ttf") format("truetype");
 }
