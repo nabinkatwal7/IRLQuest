@@ -1,9 +1,7 @@
+import ProfileWrapper from "@/components/Profile/ProfileWrapper";
+
 const Page = () => {
-  return (
-    <div>
-      <h1>Profile</h1>
-    </div>
-  );
+  return <ProfileWrapper />;
 };
 
 export default Page;

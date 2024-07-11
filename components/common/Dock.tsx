@@ -16,6 +16,7 @@ import {
   CiUser,
 } from "react-icons/ci";
 import { GiMaterialsScience } from "react-icons/gi";
+import { IoExitOutline } from "react-icons/io5";
 
 const DockData = [
   {
@@ -81,15 +82,20 @@ const Dock = () => {
     token = localStorage.getItem("user");
   }
 
-  console.log(token);
-
   useEffect(() => {
     if (!token) {
       router.push("/login");
     }
   }, [token, router]);
+
+  const handleLogout = () => {
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("user");
+    }
+    router.push("/login");
+  };
   return (
-    <div className="absolute bottom-0 w-full  flex justify-center items-center ">
+    <div className="fixed bottom-2 w-full  flex justify-center items-center ">
       <div className="dock-container flex flex-row gap-2 border-2 shadow-2xl rounded-lg p-1">
         {DockData.map((item) => (
           <Link
@@ -103,6 +109,13 @@ const Dock = () => {
             {item.icon}
           </Link>
         ))}
+        <button
+          type="button"
+          onClick={handleLogout}
+          className="flex flex-row items-center gap-2 justify-end text-3xl border-l-2 pl-2"
+        >
+          <IoExitOutline />
+        </button>
       </div>
     </div>
   );
