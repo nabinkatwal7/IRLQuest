@@ -5,7 +5,6 @@ import { FaCamera, FaInfo } from "react-icons/fa";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { GoCodeOfConduct } from "react-icons/go";
 import { TfiSupport } from "react-icons/tfi";
-import { IoExitOutline } from "react-icons/io5";
 import Link from "next/link";
 
 const ProfileSettings = [
@@ -30,7 +29,7 @@ const ProfileSettings = [
     icon: <TfiSupport />,
   },
   {
-    name: "About Us",
+    name: "About IRL Quests",
     path: "/user/profile/about",
     icon: <FaInfo />,
   },
@@ -62,15 +61,15 @@ const ProfileCard = () => {
           </p>
         </div>
       </div>
-      <div className="profile-section flex flex-col gap-2">
+      <div className="profile-section flex flex-col gap-2 justify-end items-end">
         {ProfileSettings.map((item) => (
           <Link
             href={item.path}
             className="flex flex-row gap-2 items-center"
             key={item.name}
           >
-            <span className="text-xl">{item.icon}</span>
-            <span>{item.name}</span>
+            <span className="text-sm lg:text-base">{item.name}</span>
+            <span className="text-sm lg:text-xl">{item.icon}</span>
           </Link>
         ))}
       </div>

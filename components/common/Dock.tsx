@@ -95,13 +95,13 @@ const Dock = () => {
     router.push("/login");
   };
   return (
-    <div className="fixed bottom-2 w-full  flex justify-center items-center ">
-      <div className="dock-container flex flex-row gap-2 border-2 shadow-2xl rounded-lg p-1">
+    <div className="fixed bottom-2 w-full  flex justify-center items-center max-sm:px-4">
+      <div className="dock-container no-scrollbar overflow-x-scroll bg-white flex flex-row gap-2 border-2 shadow-2xl rounded-lg p-1">
         {DockData.map((item) => (
           <Link
             href={item.link}
             className={classNames(
-              "dock-item text-3xl p-2 transition-all duration-1000 ",
+              "dock-item text-3xl p-2 transition-all duration-500 hover:scale-150",
               location === `${item.link}` && "bg-black text-white rounded-lg"
             )}
             key={item.id}
