@@ -2,6 +2,8 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import {
   CiCalendar,
   CiChat1,
@@ -71,14 +73,29 @@ const DockData = [
 const Dock = () => {
   const location = usePathname();
 
+  const router = useRouter();
+
+  let token: any = null;
+
+  if (typeof window !== "undefined") {
+    token = localStorage.getItem("user");
+  }
+
+  console.log(token);
+
+  useEffect(() => {
+    if (!token) {
+      router.push("/login");
+    }
+  }, [token, router]);
   return (
-    <div className="absolute bottom-2 w-full  flex justify-center items-center ">
+    <div className="absolute bottom-0 w-full  flex justify-center items-center ">
       <div className="dock-container flex flex-row gap-2 border-2 shadow-2xl rounded-lg p-1">
         {DockData.map((item) => (
           <Link
             href={item.link}
             className={classNames(
-              "dock-item text-3xl p-2",
+              "dock-item text-3xl p-2 transition-all duration-1000 ",
               location === `${item.link}` && "bg-black text-white rounded-lg"
             )}
             key={item.id}

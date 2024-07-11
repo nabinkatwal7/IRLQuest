@@ -3,9 +3,8 @@ import DashboardWrapper from "@/components/Dashboard/DashboardWrapper";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard-container-main relative w-screen h-screen">
+    <div className="dashboard-container-main">
       <DashboardWrapper />
-      <Dock />
     </div>
   );
 };
