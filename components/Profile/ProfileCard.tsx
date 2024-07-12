@@ -37,7 +37,7 @@ const ProfileSettings = [
 
 const ProfileCard = () => {
   return (
-    <div className="profile-card grid grid-cols-1 lg:grid-cols-2 gap-2 shadow-lg p-4 border-2 rounded-lg">
+    <div className="profile-card grid grid-cols-1 lg:grid-cols-2 gap-2 shadow-lg p-4 border-2 rounded-lg hover:shadow-xl hover:border-black transition-all duration-700">
       <div className=" flex flex-col gap-2 ">
         <div className="relative w-fit">
           <Image

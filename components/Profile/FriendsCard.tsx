@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const FriendsCard = () => {
   return (
-    <div className="friends-card flex flex-col gap-4 border-2 p-4 rounded-lg shadow-lg">
+    <div className="friends-card flex flex-col gap-4 border-2 p-4 rounded-lg shadow-lg hover:shadow-xl hover:border-black transition-all duration-700">
       <p className="text-xl font-bold">Friends</p>
       <div className="flex flex-wrap gap-x-8 gap-y-4">
         {[...Array(5)].map((_, i) => (

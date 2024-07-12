@@ -2,7 +2,7 @@ import { FaFireAlt } from "react-icons/fa";
 
 const Streaks = () => {
   return (
-    <div className="streaks p-4 rounded-lg border-2 shadow lg flex flex-col gap-2">
+    <div className="streaks p-4 rounded-lg border-2 shadow-lg hover:shadow-xl hover:border-black transition-all duration-700 flex flex-col gap-2">
       <div className="flex flex-row justify-between items-center">
         <p className="text-xl font-bold">Streak</p>
         <div className="flex flex-row gap-2 items-center">
