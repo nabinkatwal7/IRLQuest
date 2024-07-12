@@ -7,7 +7,7 @@ const ForumPosts = () => {
       <div className="flex flex-col gap-2">
         {[...Array(4)].map((_, i) => (
           <div key={i} className="flex flex-col px-2">
-            <p>How I achieved mindfullness</p>
+            <p>How I achieved mindfulness</p>
             <p className="text-xs italic font-secondary">27 Jan 2024</p>
           </div>
         ))}

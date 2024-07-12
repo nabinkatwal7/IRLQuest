@@ -15,7 +15,7 @@ const ProfileSettings = [
   },
   {
     name: "Privacy Policy",
-    path: "/user/profile/privacy",
+    path: "/privacy",
     icon: <IoShieldCheckmarkOutline />,
   },
   {
