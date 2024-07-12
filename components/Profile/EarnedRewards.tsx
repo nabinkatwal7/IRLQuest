@@ -4,7 +4,7 @@ import { CiCircleInfo } from "react-icons/ci";
 const EarnedRewards = () => {
   // TODO: Add popover for info
   return (
-    <div className="earned-rewards p-4 rounded-lg border-2 shadow lg flex flex-col gap-2">
+    <div className="earned-rewards p-4 rounded-lg border-2 shadow lg flex flex-col gap-2 hover:shadow-xl hover:border-black transition-all duration-700">
       <div className="flex flex-row justify-between">
         <p className="text-xl font-bold">Earnings</p>
         <p className="text-xl font-bold">$500</p>

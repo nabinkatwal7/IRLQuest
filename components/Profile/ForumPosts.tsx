@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ForumPosts = () => {
   return (
-    <div className="forum-posts flex flex-col gap-4 border-2 p-4 rounded-lg shadow-lg">
+    <div className="forum-posts flex flex-col gap-4 border-2 p-4 rounded-lg shadow-lg hover:shadow-xl hover:border-black transition-all duration-700">
       <p className="text-xl font-bold">Forum Posts</p>
       <div className="flex flex-col gap-2">
         {[...Array(4)].map((_, i) => (
