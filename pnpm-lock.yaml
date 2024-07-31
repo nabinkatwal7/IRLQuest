@@ -95,6 +95,9 @@ importers:
       react-icons:
         specifier: ^5.2.1
         version: 5.2.1(react@18.3.1)
+      react-lottie-player:
+        specifier: ^2.1.0
+        version: 2.1.0(react@18.3.1)
       recharts:
         specifier: '2'
         version: 2.12.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1513,6 +1516,9 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
+  lottie-web@5.12.2:
+    resolution: {integrity: sha512-uvhvYPC8kGPjXT3MyKMrL3JitEAmDMp30lVkuq/590Mw9ok6pWcFCwXJveo0t5uqYw1UREQHofD+jVpdjBv8wg==}
+
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
@@ -1848,6 +1854,12 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  react-lottie-player@2.1.0:
+    resolution: {integrity: sha512-rxSNIVVLWYnwzsIow377vZsh7GDbReu70V7IDD9TbbcdcJWons4pSh3nyuEa4QWIZw0ZBIieoZRTsiqnb6MZ3g==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   react-number-format@5.4.0:
     resolution: {integrity: sha512-NWdICrqLhI7rAS8yUeLVd6Wr4cN7UjJ9IBTS0f/a9i7UB4x4Ti70kGnksBtZ7o4Z7YRbvCMMR/jQmkoOBa/4fg==}
     peerDependencies:
@@ -1952,6 +1964,9 @@ packages:
   reusify@1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+
+  rfdc@1.4.1:
+    resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
@@ -3867,6 +3882,8 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
+  lottie-web@5.12.2: {}
+
   lru-cache@10.4.3: {}
 
   markdown-it@14.1.0:
@@ -4231,6 +4248,13 @@ snapshots:
 
   react-is@16.13.1: {}
 
+  react-lottie-player@2.1.0(react@18.3.1):
+    dependencies:
+      fast-deep-equal: 3.1.3
+      lottie-web: 5.12.2
+      react: 18.3.1
+      rfdc: 1.4.1
+
   react-number-format@5.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       prop-types: 15.8.1
@@ -4356,6 +4380,8 @@ snapshots:
       supports-preserve-symlinks-flag: 1.0.0
 
   reusify@1.0.4: {}
+
+  rfdc@1.4.1: {}
 
   rimraf@3.0.2:
     dependencies:
