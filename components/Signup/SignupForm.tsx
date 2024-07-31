@@ -99,7 +99,7 @@ const SignupForm = () => {
             type="submit"
             className="bg-black text-white px-4 py-2 w-full rounded-full font-bold"
           >
-            Login
+            Sign Up
           </button>
         </form>
       </div>
