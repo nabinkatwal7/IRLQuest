@@ -52,7 +52,7 @@ const ProfileCard = () => {
           </button>
         </div>
         <div className="flex flex-col">
-          <p className="text-3xl font-bold">Sheldon Cooper</p>
+          <p className="text-3xl font-secondary font-bold">Sheldon Cooper</p>
           <p>@sheldortheconquerer</p>
           <p>Quest Master(Level 30)</p>
           <p className="text-sm">
