@@ -1,7 +1,5 @@
-import ForumWrapper from "@/components/Forum/ForumWrapper";
-
 const Page = () => {
-  return <ForumWrapper />;
+  return <div>Forum</div>;
 };
 
 export default Page;
