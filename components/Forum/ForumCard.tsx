@@ -22,8 +22,8 @@ const ForumCard = ({ image }: { image: string }) => {
         comprehensive guide to unforgettable vacations. Discover the best times
         to visit, top attractions, outdoor activities, and essential tips for
         planning your trip. Whether you are seeking adventure or relaxation, our
-        guide will help you create lasting memories in this stunning natural
-        paradise.
+        guide will help you create lasting memories in this stunning natural and
+        heavenly paradise.
       </p>
       <div className="flex justify-between text-xs text-gray-600">
         <p>Monkey D. Luffy</p>
