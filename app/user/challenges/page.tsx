@@ -1,5 +1,11 @@
+import ChallengesWrapper from "@/components/Challenges/ChallengesWrapper";
+
 const Page = () => {
-  return <div>challenges</div>;
+  return (
+    <div>
+      <ChallengesWrapper />
+    </div>
+  );
 };
 
 export default Page;
