@@ -1,12 +1,19 @@
 "use client";
+
 import TabNavigation from "../common/TabNavigation";
 import NoteCard from "./NoteCard";
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { Tooltip } from "@mantine/core";
 
 const NotesWrapper = () => {
   const tabs = ["All", "Work", "Lifestyle", "Travel"];
   const [activeTab, setActiveTab] = useState(0);
+
+  const handleAddNote = () => {
+    // Handle add note action
+  };
   return (
     <div className="note-wrapper flex flex-col gap-8">
       <p className="text-5xl font-bold font-primary text-center">
@@ -50,9 +57,17 @@ const NotesWrapper = () => {
           </>
         )}
       </div>
-      <div className="fixed bottom-20 right-20  text-white p-3 rounded-full shadow-xl bg-black cursor-pointer">
-        <FaPlus size={25} />
-      </div>
+      {/* Add Note Button */}
+      <Tooltip label="Add Notes">
+        <motion.button
+          onClick={handleAddNote}
+          className="fixed bottom-20 right-20  text-white p-3 rounded-full shadow-xl bg-black cursor-pointer "
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <FaPlus size={25} />
+        </motion.button>
+      </Tooltip>
     </div>
   );
 };
