@@ -1,7 +1,9 @@
+import ChatWrapper from "@/components/Chat/ChatWrapper";
+
 const Page = () => {
   return (
     <div>
-      <h1>Chat</h1>
+      <ChatWrapper />
     </div>
   );
 };
