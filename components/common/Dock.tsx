@@ -18,6 +18,7 @@ import {
 } from "react-icons/ci";
 import { GiMaterialsScience } from "react-icons/gi";
 import { IoExitOutline } from "react-icons/io5";
+import { PiGraduationCapThin } from "react-icons/pi";
 
 const DockData = [
   {
@@ -31,6 +32,12 @@ const DockData = [
     name: "Challenges",
     link: "/user/challenges",
     icon: <CiDumbbell />,
+  },
+  {
+    id: 3,
+    name: "Courses",
+    link: "/user/courses",
+    icon: <PiGraduationCapThin />,
   },
   {
     id: 3,

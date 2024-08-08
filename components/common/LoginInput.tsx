@@ -1,3 +1,4 @@
+import { commonInputProps } from "@/app";
 import classNames from "classnames";
 
 const LoginInput = ({
