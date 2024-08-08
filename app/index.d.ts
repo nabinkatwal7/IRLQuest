@@ -1,4 +1,5 @@
-interface commonInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface commonInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   errors: any;
   register: any;
   label?: string;
@@ -8,4 +9,6 @@ interface commonInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   tooltipTitle?: string;
   inputType?: string;
   optional?: boolean;
+  handleSubmit?: any;
+  apiUrl?: string;
 }
