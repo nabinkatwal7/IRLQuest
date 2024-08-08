@@ -1,9 +1,9 @@
-import ChallengesWrapper from "@/components/Challenges/ChallengesWrapper";
+import ChallengeWrapper from "@/components/Challenges/ChallengeWrapper";
 
 const Page = () => {
   return (
-    <div>
-      <ChallengesWrapper />
+    <div className="max-width">
+      <ChallengeWrapper />
     </div>
   );
 };

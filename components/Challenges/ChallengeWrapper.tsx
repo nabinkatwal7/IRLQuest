@@ -1,10 +1,10 @@
 "use client";
 import TabNavigation from "../common/TabNavigation";
-import ChallengeCard from "./ChallengeCard";
 import { useState } from "react";
+import ChallengeTable from "./ChallengeTable";
 
-const ChallengesWrapper = () => {
-  const tabs = ["Daily Challenges", "Missions"];
+const ChallengeWrapper = () => {
+  const tabs = ["All Challenges", "Fitness", "Productivity", "Mindfulness"];
   const [activeTab, setActiveTab] = useState(0);
   return (
     <div className="forum-wrapper flex flex-col gap-8">
@@ -18,8 +18,8 @@ const ChallengesWrapper = () => {
           setActiveTab={setActiveTab}
         />
       </div>
-
-      <div className="flex flex-col gap-4">
+      <ChallengeTable />
+      {/* <div className="flex flex-col gap-4">
         {activeTab === 0 && (
           <>
             {[...Array(8)].map((_, i) => (
@@ -43,9 +43,9 @@ const ChallengesWrapper = () => {
             ))}
           </>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default ChallengesWrapper;
+export default ChallengeWrapper;

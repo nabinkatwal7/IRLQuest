@@ -16,6 +16,16 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+:root,
+* {
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  @apply max-w-[1380px] mx-auto px-6;
+}
+
+
 /* Hides scrollbar but allows scrolling for a specific element */
 .no-scrollbar {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -25,3 +35,4 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+

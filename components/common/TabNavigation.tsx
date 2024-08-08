@@ -10,7 +10,7 @@ const TabNavigation = ({
   setActiveTab: (number: number) => void;
 }) => {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-4 overflow-x-scroll no-scrollbar">
       {tabs.map((tab, i) => (
         <button
           key={i}
